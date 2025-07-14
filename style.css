@@ -1,12 +1,99 @@
 .card-img-top1{
-    margin: auto;
+  
    
 }
 body{
     background-color: black;
 }
-.card{
-    background-color: black;
-   color: white
+
+   .card{ 
+      height: auto; /* Asegura que se adapte al contenido */
+      background-color: #1D1F23;
+      color: rgb(255, 255, 255);
+    }
+    .card-img-top1 {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 4%;
+    }
+
+
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
+/* Botón hamburguesa */
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Menú lateral oculto */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* escondido inicialmente */
+  width: 200px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+/* Menú activo (visible) */
+.side-menu.active {
+  left: 0;
+}
+
+/* Estilos del menú */
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 15px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Oculto */
+  width: 200px;
+  height: 100%;
+  background-color: #a8a8a8;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+
+  /* No tiene borde visible por defecto */
+  border-right: none;
+}
+
+/* Cuando el menú está activo (visible) */
+.side-menu.active {
+  left: 0;
+  border-right: 12px solid #f8f9fa63; /* Aparece el borde al desplegar */
+}
+.menu-btn{
+  color: white;
+}

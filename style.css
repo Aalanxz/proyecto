@@ -1,14 +1,17 @@
-.card-img-top1{
-  
-   
-}
+
 body{
     background-color: black;
+    
 }
+ head{
+  background-color: #000000;
+ }
+
+
 
    .card{ 
       height: auto; /* Asegura que se adapte al contenido */
-      background-color: #1D1F23;
+      background-color: #000000;
       color: rgb(255, 255, 255);
     }
     .card-img-top1 {
